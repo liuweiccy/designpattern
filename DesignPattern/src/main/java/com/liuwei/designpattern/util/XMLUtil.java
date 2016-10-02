@@ -13,14 +13,14 @@ import java.io.IOException;
 
 public class XMLUtil {
 
-    public static final String CONFIG_XML = "config.xml";
+    public static final String CONFIG_XML = "src/main/resources/config.xml";
 
-    public static String getChartType() {
+    public static String getChartType(String nodeName) {
         try {
             DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = dFactory.newDocumentBuilder();
             Document doc = builder.parse(new File(CONFIG_XML));
-            NodeList n1 = doc.getElementsByTagName("chartType");
+            NodeList n1 = doc.getElementsByTagName(nodeName);
             Node classNode = n1.item(0).getFirstChild();
             return classNode.getNodeValue().trim();
         } catch (ParserConfigurationException e) {
