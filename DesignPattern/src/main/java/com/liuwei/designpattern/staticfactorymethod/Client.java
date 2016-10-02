@@ -9,5 +9,6 @@ public class Client {
         chart.display();
         chart = ChartFactory.getChart2(XMLUtil.getChartType());
         chart.display();
+        System.out.println(chart.toString());
     }
 }
