@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <chartType>line</chartType>
+    <className>com.liuwei.designpattern.factorymethod.FileLoggerFactory</className>
+    <className2>com.liuwei.designpattern.factorymethod.FileLoggerFactory2</className2>
+    <pictureReader>com.liuwei.designpattern.factorymethod.picture.JPGPictureReaderFactory</pictureReader>
+    <product>com.liuwei.designpattern.abstractfactory.SpringSkinFactory</product>
+    <controller>com.liuwei.designpattern.abstractfactory.game.AndroidControllerFactory</controller>
+</config>
