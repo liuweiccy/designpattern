@@ -8,5 +8,6 @@ public class Client {
         ConcretePrototype concretePrototype2 = concretePrototype;
         System.out.println(concretePrototype == concretePrototype1);
         System.out.println(concretePrototype == concretePrototype2);
+        System.out.println(concretePrototype.getClass() == concretePrototype1.getClass());
     }
 }
