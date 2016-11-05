@@ -6,4 +6,5 @@
     <pictureReader>com.liuwei.designpattern.factorymethod.picture.JPGPictureReaderFactory</pictureReader>
     <product>com.liuwei.designpattern.abstractfactory.SpringSkinFactory</product>
     <controller>com.liuwei.designpattern.abstractfactory.game.AndroidControllerFactory</controller>
+    <adapter>com.liuwei.designpattern.adapter.OperationAdapter</adapter>
 </config>
