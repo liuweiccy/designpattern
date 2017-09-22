@@ -4,7 +4,7 @@ import java.util.Hashtable;
 
 public class PrototypeManager {
     private static final PrototypeManager pm = new PrototypeManager();
-    private Hashtable<String, OfficialDocument> ht = new Hashtable<>();
+    private Hashtable<String, OfficialDocument> ht = new Hashtable<String, OfficialDocument>();
 
     private PrototypeManager() {
         ht.put("srs", new SRS());
