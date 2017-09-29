@@ -2,7 +2,7 @@ package com.liuwei.designpattern.proxy.example2;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class DAOLogHandler implements InvocationHandler {
 
@@ -14,7 +14,7 @@ public class DAOLogHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        LocalDate localDate = LocalDate.now();
+        LocalDateTime localDate = LocalDateTime.now();
         System.out.println("调用时间为：" +  localDate);
         Object result =  method.invoke(proxyInstance, args);
         System.out.println("调用结束");
