@@ -9,6 +9,7 @@ public class Client {
         jguo = new President("总经理");
         meeting = new Congress("禁止");
 
+        // 自己组装责任链
         wjzhang.setSuccesser(gyang);
         gyang.setSuccesser(jguo);
         jguo.setSuccesser(meeting);
