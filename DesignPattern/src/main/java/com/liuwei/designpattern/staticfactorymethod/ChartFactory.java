@@ -11,13 +11,13 @@ public class ChartFactory {
 
     public static Chart getChart2(String type) {
         Chart chart = null;
-        if (type.equalsIgnoreCase("pie")) {
+        if ("pie".equalsIgnoreCase(type)) {
             chart = new PieChart();
             System.out.println("初始化PieChart图");
-        } else if (type.equalsIgnoreCase("history")) {
+        } else if ("history".equalsIgnoreCase(type)) {
             chart = new HistoryChart();
             System.out.println("初始化HistoryChart图");
-        } else if (type.equalsIgnoreCase("line")) {
+        } else if ("line".equalsIgnoreCase(type)) {
             chart = new LineChart();
             System.out.println("初始化LineChart图");
         }

@@ -13,7 +13,9 @@ public class LoadBalancer {
     }
 
     public static LoadBalancer getLoadBalancer() {
-        if (loadBalancer == null) loadBalancer = new LoadBalancer();
+        if (loadBalancer == null) {
+            loadBalancer = new LoadBalancer();
+        }
         return loadBalancer;
     }
 

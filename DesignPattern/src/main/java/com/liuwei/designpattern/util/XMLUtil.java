@@ -11,6 +11,9 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * @author liuwei2
+ */
 public class XMLUtil {
 
     public static final String CONFIG_XML = "src/main/resources/config.xml";

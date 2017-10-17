@@ -4,7 +4,7 @@ import java.util.Hashtable;
 
 public class IgoChessmanFactory {
 
-    private final static IgoChessmanFactory instatce = new IgoChessmanFactory();
+    private final static IgoChessmanFactory INSTATCE = new IgoChessmanFactory();
 
     private final Hashtable<String, IgoChessman> chessmanHashtable;
 
@@ -19,7 +19,7 @@ public class IgoChessmanFactory {
     }
 
     public static IgoChessmanFactory getInstatce() {
-        return instatce;
+        return INSTATCE;
     }
 
     public IgoChessman getIgoChessman(String color) {

@@ -12,8 +12,9 @@ public class LazySingleton {
         System.out.println("获取懒汉式单例");
         if (instance == null) { // 双重检查锁定
             synchronized (LazySingleton.class) {
-                if (instance == null)
-                instance = new LazySingleton();
+                if (instance == null) {
+                    instance = new LazySingleton();
+                }
             }
         }
         return instance;
