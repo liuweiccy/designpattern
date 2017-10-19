@@ -1,7 +1,5 @@
 package com.liuwei.designpattern.observer.example2;
 
-import java.util.Observable;
-
 /**
  * @author liuwei2
  *
