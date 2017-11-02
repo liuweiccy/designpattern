@@ -6,6 +6,7 @@ public class PieChart implements Chart{
         System.out.println("创建PieChart图");
     }
 
+    @Override
     public void display() {
         System.out.println("显示PieChart图");
     }

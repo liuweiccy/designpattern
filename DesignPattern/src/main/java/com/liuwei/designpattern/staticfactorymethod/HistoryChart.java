@@ -6,6 +6,7 @@ public class HistoryChart implements Chart{
         System.out.println("创建HistoryChart图");
     }
 
+    @Override
     public void display() {
         System.out.println("显示HistoryChart图");
     }

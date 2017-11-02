@@ -5,6 +5,7 @@ public class EncryptFacade extends AbstractEncryFacade {
     private FileWriter fileWriter;
     private Encrypt encrypt;
 
+    @Override
     public void encrypt(String formName, String toName) {
         fileReader = new FileReader();
         fileWriter = new FileWriter();

@@ -6,6 +6,7 @@ public class LineChart implements Chart{
         System.out.println("创建LineChart图");
     }
 
+    @Override
     public void display() {
         System.out.println("显示LineChart图");
     }
