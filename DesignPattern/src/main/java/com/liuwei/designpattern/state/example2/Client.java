@@ -13,7 +13,7 @@ public class Client {
         s1.off();
         s1.on();
 
-        
+
         s2.on();
         s2.off();
         s2.on();
