@@ -1,2 +1,5 @@
 DesignPattern/.idea/
 DesignPattern/target/
+.idea/
+src/main/main.iml
+target/
