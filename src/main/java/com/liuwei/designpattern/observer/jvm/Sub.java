@@ -1,7 +1,5 @@
 package com.liuwei.designpattern.observer.jvm;
 
-import lombok.Getter;
-
 import java.util.Observable;
 import java.util.Observer;
 
@@ -11,17 +9,16 @@ import java.util.Observer;
  * @author Eric Liu
  * @date 2019/08/21 23:18
  */
-public class MyObserver implements Observer {
-    @Getter
+public class Sub implements Observer {
     private String name;
 
-    public MyObserver(String name, Observable observable) {
+    public Sub(String name, Pub pub) {
         this.name = name;
-        observable.addObserver(this);
+        pub.addObserver(this);
     }
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println("收到观察者消息");
+        System.out.printf("%s:收到观察者消息:%s\n", name, arg);
     }
 }

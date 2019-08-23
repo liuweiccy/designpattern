@@ -1,7 +1,5 @@
 package com.liuwei.designpattern.observer.jvm;
 
-import java.util.Observable;
-
 /**
  * ....
  *
@@ -10,11 +8,14 @@ import java.util.Observable;
  */
 public class Client {
     public static void main(String[] args) {
-        Observable observable = new Observable();
+        Pub pub = new Pub();
 
-        MyObserver observer = new MyObserver("VV", observable);
+        Sub sub1 = new Sub("pub1", pub);
+        Sub sub2 = new Sub("pub2", pub);
+        Sub sub3 = new Sub("pub3", pub);
 
-        observable.hasChanged();
-        observable.notifyObservers();
+        String s = "Hello";
+        System.out.printf("发送字符串：%s\n", s);
+        pub.setMsg(s);
     }
 }
